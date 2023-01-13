@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Last 3 clipboard items",
+    "version": "1.9",
+    "description": "An extension that saves the last 3 items copied to the clipboard and displays them in a popup",
+    "browser_action": {
+        "default_popup": "popup-clipboard.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["storage", "clipboardRead"],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}
